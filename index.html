@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="s">
+    <h1>NETFLIX</h1>
+  </div>
+  <h2><u>Sign In</u></h2>
+  <hr color="orange">
+
+  <div id="c">
+    <h1>Choose the plan that's right for you</h1>
+  </div>
+
+  <div class="box">
+    <!-- Plan sections -->
+    <div class="plan" onmouseenter="addStyles(this)" onmouseleave="removeStyles(this)">
+      <div id="m">
+        <h3>Premium</h3>
+        <h4>4K + HDR</h4>
+      </div>
+      <p>Monthly price</p>
+      <p><b>Rs.649</b></p><hr>
+      <p>Video and sound quality</p>
+      <p>Best</p><hr>
+      <p>Resolution</p>
+      <p>4K (Ultra HD) + HDR</p><hr>
+      <p>Supported devices</p>
+      <p>TV, computer, mobile, tablet</p><hr>
+      <p>Devices your household can watch at the same time</p>
+      <p>4</p><hr>
+      <p>Download devices</p>
+      <p>6</p>
+      <div class="q">
+        <button class="select-btn" onclick="purchase('Premium')">Purchase</button>
+      </div>
+    </div>
+
+    <!-- Repeat for other plans -->
+    <!-- Standard -->
+    <div class="plan" onmouseenter="addStyles(this)" onmouseleave="removeStyles(this)">
+      <div class="n">
+        <h3>Standard</h3>
+        <h4>1080p</h4>
+      </div>
+      <p>Monthly price</p>
+      <p><b>Rs.499</b></p><hr>
+      <p>Video and sound quality</p>
+      <p>Great</p><hr>
+      <p>Resolution</p>
+      <p>1080p (Full HD)</p><hr>
+      <p>Supported devices</p>
+      <p>TV, computer, mobile, tablet</p><hr>
+      <p>Devices your household can watch at the same time</p>
+      <p>2</p><hr>
+      <p>Download devices</p>
+      <p>2</p>
+      <div class="q">
+        <button class="select-btn" onclick="purchase('Standard')">Purchase</button>
+      </div>
+    </div>
+    <!-- Other plans here... -->
+  </div>
+
+  <div class="box">
+    <p>
+      HD (720p), Full HD (1080p), Ultra HD (4K), and HDR availability are subject to your internet service 
+      and device capabilities. Not all content is available in all resolutions. See our Terms of Use for more details.
+    </p>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
